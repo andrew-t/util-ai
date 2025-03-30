@@ -1,0 +1,23 @@
+{
+  "name": "util-ai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": {
+    "name": "Andrew Taylor",
+    "email": "andrew@andrewt.net",
+    "url": "https://www.andrewt.net/"
+  },
+  "homepage": "https://github.com/andrew-t/util-ai",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "openai": "^4.89.0"
+  },
+  "files": []
+}
