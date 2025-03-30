@@ -62,13 +62,13 @@ Now all we need to do is have the returned function call ChatGPT, and we can eff
 
 ```js
 const aiUtil = new Proxy({}, {
-    async get(target, name, receiver) {
-        return () => {
+    get(target, name, receiver) {
+        return async () => {
             const response = await callChatGpt(
                 `Toolbox is a helpful Javascript utility library,
                 which contains many useful functions.
                 What value would you expect the code
-                Toolbox.${name}(${args.map(a => JSON.stringify).join(", ")})
+                Toolbox.${name}(${args.map(JSON.stringify).join(", ")})
                 to return?
                 
                 Answer in valid JSON, do not return anything that is not valid JSON.

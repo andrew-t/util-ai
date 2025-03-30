@@ -1,6 +1,6 @@
 {
-  "name": "util-ai",
-  "version": "1.0.0",
+  "name": "@andrewtaylor/util-ai",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "jest"
