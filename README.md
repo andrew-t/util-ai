@@ -63,7 +63,7 @@ Now all we need to do is have the returned function call ChatGPT, and we can eff
 ```js
 const aiUtil = new Proxy({}, {
     get(target, name, receiver) {
-        return async () => {
+        return async (...args) => {
             const response = await callChatGpt(
                 `Toolbox is a helpful Javascript utility library,
                 which contains many useful functions.
